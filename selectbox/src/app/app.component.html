@@ -1,0 +1,12 @@
+<table>
+    <tr *ngFor="let emp of employee.roles">
+        <td>{{emp.category_name}}</td>
+        <td>{{emp.category_id}}</td>
+    </tr>
+    <tr *ngFor="let emp of employee.industries">
+        <td>{{emp.category_name}}</td>
+        <td>{{emp.category_id}}</td>
+    </tr>
+</table>
+
+<button class="btn btn-primary" (click)="postrequest()">Post request</button>

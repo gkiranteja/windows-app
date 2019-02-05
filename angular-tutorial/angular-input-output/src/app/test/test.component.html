@@ -1,0 +1,12 @@
+<!--<table>
+    <tr *ngFor="let employ of employee">
+        <td>{{employ.id}}</td>
+        <td>{{employ.title}}</td>
+        <td>{{employ.completed}}</td>
+    </tr>
+</table>-->
+
+<h2>Test Componet</h2>
+<h1>{{ "hello " + messageChildData }}</h1>
+
+<app-demo [parentData]="showData" (childData)="messageChildData=$event"></app-demo>

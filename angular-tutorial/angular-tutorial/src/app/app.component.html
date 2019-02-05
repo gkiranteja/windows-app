@@ -1,0 +1,34 @@
+<h1> Welcome to {{ title }}! </h1>
+
+<h4>{{siteUrl}}</h4>
+
+<input type="text" value="kiran" [id]="name" bind-disabled="disabledProperty">
+
+<div class="text-success">Hai</div>
+<div [class]="text-success">Hello</div>
+<div [class.text-success]="hasClass">Bye</div>
+
+<h3 [ngClass]="messageClass">Hello team</h3>
+
+<h3 [style.color]="!hasClass ? 'red' : 'green'">This is style binding</h3>
+
+<button (click)="onClick($event)">Click</button>
+<button (click)="message = 'welcome teja'">Click</button> {{message}}
+
+<br>
+<hr><br>
+
+<input type="text" #myInput>
+<button (click)="logMessage(myInput.value)">Log</button>
+
+<br>
+<hr><br>
+
+<input type="text" [(ngModel)]="modelName"> {{modelName}}
+
+<br>
+<hr><br>
+
+<app-test [parentData]="sendName"></app-test>
+
+<router-outlet></router-outlet>
